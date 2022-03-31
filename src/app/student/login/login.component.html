@@ -1,0 +1,11 @@
+<div class="container" style="text-align:center">
+    <form [formGroup]="loginForm" (submit)="userLogin(loginForm.value)">
+        <h2>Login</h2>
+        <label>Enter EmailId</label>
+        <input type="email" name="userMail" id="userMail"formControlName="email"><br><br>
+        <label>Enter Password</label>
+        <input type="password" id="userPass" name="userPass" formControlName="password"><br>
+        <br>
+        <button>Login</button>
+    </form>
+</div>

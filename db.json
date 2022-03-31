@@ -1,0 +1,17 @@
+{
+  "register": [
+    {
+      "userName": "",
+      "userMail":"",
+      "userPass": ""
+    }
+  ],
+  "login": [
+    {
+      "userMail":"abc@gmail.com",
+      "password":"abc@1234"
+      
+    }
+  ]
+  
+}
