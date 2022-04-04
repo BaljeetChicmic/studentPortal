@@ -9,6 +9,7 @@ import { RegisterComponent } from './commonComp/register/register.component';
 import { ForgotPasswordComponent } from './commonComp/forgot-password/forgot-password.component';
 import { DashboardComponent } from './commonComp/dashboard/dashboard.component';
 import { HeaderNavigationComponent } from './commonComp/header-navigation/header-navigation.component';
+import { ResetPasswordComponent } from './commonComp/reset-password/reset-password.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,8 @@ import { HeaderNavigationComponent } from './commonComp/header-navigation/header
     RegisterComponent,
     ForgotPasswordComponent,
     DashboardComponent,
-    HeaderNavigationComponent
+    HeaderNavigationComponent,
+    ResetPasswordComponent
   ],
   imports: [
     BrowserModule,
