@@ -2,27 +2,27 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './student/login/login.component';
-import { RegisterComponent } from './student/register/register.component';
-import { ForgotPasswordComponent } from './student/forgot-password/forgot-password.component';
-import { ResetPasswordComponent } from './student/reset-password/reset-password.component';
-
+import { LoginComponent } from './commonComp/login/login.component';
+import { RegisterComponent } from './commonComp/register/register.component';
+import { ForgotPasswordComponent } from './commonComp/forgot-password/forgot-password.component';
+import { DashboardComponent } from './commonComp/dashboard/dashboard.component';
+import { HeaderNavigationComponent } from './commonComp/header-navigation/header-navigation.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
     ForgotPasswordComponent,
-    ResetPasswordComponent
+    DashboardComponent,
+    HeaderNavigationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [],

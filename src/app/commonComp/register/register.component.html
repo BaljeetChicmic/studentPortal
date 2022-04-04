@@ -1,0 +1,15 @@
+
+<form [formGroup]="registerForm" (submit)="submitRegistrationForm()">
+    <h3>Sign-in</h3>
+    <input type="text" placeholder="Enter User Name" id="userName" formControlName="name">
+    <input type="email" placeholder="Enter Email-ID" id="userId" formControlName="email">
+    <span *ngIf="controls.email?.touched && controls.email?.errors?.required"></span>
+    <!-- <span *ngIf="registerForm['email'].touched && registerForm['email'].errors.required"></span> -->
+    <input type="password" placeholder="Password" id="password" formControlName="password">
+    <label for="role">Select Role:</label>
+    <select name="role" id="role">
+        <option value="Student">Student</option>
+        <option value="Teacher">Teacher</option>
+    </select>    
+    <button>Sign-In</button>
+</form>

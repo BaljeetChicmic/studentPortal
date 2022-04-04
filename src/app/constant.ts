@@ -4,6 +4,11 @@ export const CONSTANTS={
         SIGNUP:'student-signup',
         FORGOT_PASS:'forgot',
         RESET_PASS:'reset'
+    },
+    TEACHER:{
+        ADD_STUDENT:'addStudent',
+        VIEW_STUDENT:'viewStudent',
+        REMOVE_STUDENT:'removeStudent'
     }
 }
 
