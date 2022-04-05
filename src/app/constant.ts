@@ -3,12 +3,11 @@ export const CONSTANTS={
         LOGIN:'login',
         SIGNUP:'student-signup',
         FORGOT_PASS:'forgot',
-        RESET_PASS:'reset'
-    },
-    TEACHER:{
-        ADD_STUDENT:'addStudent',
-        VIEW_STUDENT:'viewStudent',
-        REMOVE_STUDENT:'removeStudent'
+        RESET_PASS:'reset',
+        STUDENT_LIST:'studentList',
+        MY_STUDENT:'myStudent',
+        DASHBOARD:'dashboard'
+
     }
 }
 

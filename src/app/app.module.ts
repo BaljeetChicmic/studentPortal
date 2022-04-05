@@ -10,6 +10,8 @@ import { ForgotPasswordComponent } from './commonComp/forgot-password/forgot-pas
 import { DashboardComponent } from './commonComp/dashboard/dashboard.component';
 import { HeaderNavigationComponent } from './commonComp/header-navigation/header-navigation.component';
 import { ResetPasswordComponent } from './commonComp/reset-password/reset-password.component';
+import { StudentListComponent } from './student-list/student-list.component';
+import { MyStudentComponent } from './my-student/my-student.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,9 @@ import { ResetPasswordComponent } from './commonComp/reset-password/reset-passwo
     ForgotPasswordComponent,
     DashboardComponent,
     HeaderNavigationComponent,
-    ResetPasswordComponent
+    ResetPasswordComponent,
+    StudentListComponent,
+    MyStudentComponent
   ],
   imports: [
     BrowserModule,

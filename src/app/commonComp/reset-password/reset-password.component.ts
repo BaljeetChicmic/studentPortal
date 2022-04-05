@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { REGEX } from 'src/app/constant';
 
@@ -9,9 +9,8 @@ import { REGEX } from 'src/app/constant';
 })
 export class ResetPasswordComponent implements OnInit {
 resetPasswordForm:FormGroup|any;
-showPassword!:boolean;
+showPassword:boolean = false;
   constructor(private form:FormBuilder) {
-    this.showPassword=false;
    }
 
   ngOnInit(): void {
@@ -24,9 +23,10 @@ showPassword!:boolean;
       confirmPassword:['',[Validators.required,Validators.pattern(REGEX.PASSWORD)]]
     })
   }
-  showHidePassword(event:any)
+  showHidePassword()
   {
-    this.showPassword = event.target.checked;
+    console.log(this.showPassword);
+    
   }
 
   get controls() {
@@ -36,5 +36,6 @@ showPassword!:boolean;
   {
     console.log(this.resetPasswordForm.value);
   }
-
+ 
+  
 }
