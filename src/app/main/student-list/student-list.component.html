@@ -1,0 +1,19 @@
+<div class="studentTable">
+    <h4>Student List</h4>
+    <table id="studentList">
+        <thead>
+            <th>Sr. no</th>
+            <th>Student Name</th>
+            <th>Email-ID</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of userList; let i=index">
+                <td>{{i+1}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+                <td><button class="btn btn-success">Add</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

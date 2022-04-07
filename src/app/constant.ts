@@ -1,13 +1,17 @@
 export const CONSTANTS={
     AUTH_PATHS:{
         LOGIN:'login',
-        SIGNUP:'student-signup',
+        SIGNUP:'signup',
         FORGOT_PASS:'forgot',
         RESET_PASS:'reset',
+        MAIN: 'main',
+        AUTH:'auth'
+    },
+    MAIN_PATH:{
         STUDENT_LIST:'studentList',
         MY_STUDENT:'myStudent',
-        DASHBOARD:'dashboard'
-
+        DASHBOARD:'dashboard',
+        NAVIGATION:''
     }
 }
 
@@ -21,4 +25,9 @@ export const API_PATHS = {
 }
 export const REGEX={
     PASSWORD:/^(?=.*[A-Za-z])(?=(.*[\d]){1,})(?=.*?[^\w\s]).{8,}$/
+}
+
+export enum ROLE{
+    STUDENT,
+    TEACHER
 }

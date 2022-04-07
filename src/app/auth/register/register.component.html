@@ -1,0 +1,19 @@
+
+<form [formGroup]="registerForm" (submit)="submitRegistrationForm()">
+    <h3>Sign-up</h3>
+    <input type="text" placeholder="Enter User Name" id="userName" formControlName="name">
+    <span *ngIf="(submitted || controls.name?.touched) && controls.name?.errors?.required">Enter Name please</span>
+    <input type="email" placeholder="Enter Email-ID" id="userId" formControlName="email">
+    <span *ngIf="(submitted || controls.email?.touched) && controls.email?.errors?.required">Enter Email-ID</span>
+    <span *ngIf="(submitted || controls.email?.touched) && controls.email?.errors?.email">Enter valid Email-ID</span>
+    <input type="password" placeholder="Password" id="password" formControlName="password">
+    <span *ngIf="(submitted || controls.password?.touched) && controls.password?.errors?.required">Enter Correct Password</span>
+    <span *ngIf="(submitted || controls.password?.touched) && controls.password?.errors?.pattern">Enter Valid Password</span>
+    <label for="role">Select Role:</label>
+    <select name="role" id="role" formControlName="role">
+        <option value="" disabled selected>Select</option>
+        <option [value]="roles.STUDENT">Student</option>
+        <option [value]="roles.TEACHER">Teacher</option>
+    </select>    
+    <button >Sign-Up</button>
+</form>

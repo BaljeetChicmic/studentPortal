@@ -1,0 +1,12 @@
+<form [formGroup]="loginForm" (submit)="loginUser()">
+    <h3>Login Here</h3>
+    <label for="userMail">Username</label>
+    <input type="email" placeholder="Email" id="userMail" formControlName="email">
+    <span *ngIf="(submitted || controls.email?.touched) && controls.email?.errors?.required">Enter Email-ID</span>
+    <span *ngIf="(submitted || controls.email?.touched) && controls.email?.errors?.email">Enter Valid Email-ID</span>
+    <label for="password">Password</label>
+    <input type="password" placeholder="Password" id="password" formControlName="password">
+    <span *ngIf="(submitted || controls.password?.touched) && controls.password?.errors?.password">Enter Password</span>
+    <span *ngIf="(submitted || controls.password?.touched) && controls.password?.errors?.pattern">Enter Valid Password</span>
+    <button>Log In</button>
+</form>
